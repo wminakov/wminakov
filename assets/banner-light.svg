@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="240" viewBox="0 0 1280 240" role="img" aria-label="Minimal abstract sound wave">
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6f7479" stop-opacity="0"/>
+      <stop offset="0.22" stop-color="#6f7479" stop-opacity="0.5"/>
+      <stop offset="0.5" stop-color="#6f7479" stop-opacity="1"/>
+      <stop offset="0.78" stop-color="#6f7479" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#6f7479" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="240" fill="#f7f7f5"/>
+  <path d="M80 120 C260 120 330 120 470 120 S720 120 810 120 S1030 120 1200 120" stroke="#9da3a8" stroke-width="22" opacity="0.12" fill="none" filter="url(#soft)"/>
+  <g transform="translate(0 0)">
+    <path d="M -20 116.0 C 100 90.0, 160 134.0, 270 114.0 S 430 87.8, 540 113.0 S 700 129.6, 810 112.0 S 970 90.0, 1080 114.0 S 1240 127.4, 1320 112.0" fill="none" stroke="#6f7479" stroke-width="1.6" opacity="0.78" stroke-linecap="round"/><path d="M -20 119.2 C 100 102.2, 160 128.2, 270 117.2 S 430 100.9, 540 116.2 S 700 125.6, 810 115.2 S 970 102.2, 1080 117.2 S 1240 124.3, 1320 115.2" fill="none" stroke="#6f7479" stroke-width="1.0" opacity="0.34" stroke-linecap="round"/><path d="M -20 122.8 C 100 110.8, 160 126.8, 270 120.8 S 430 110.0, 540 119.8 S 700 125.2, 810 118.8 S 970 110.8, 1080 120.8 S 1240 124.4, 1320 118.8" fill="none" stroke="#6f7479" stroke-width="0.9" opacity="0.22" stroke-linecap="round"/>
+  </g>
+  <path d="M70 166 H1210" stroke="url(#fade)" stroke-width="0.7" opacity="0.24"/>
+</svg>
