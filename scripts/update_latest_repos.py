@@ -9,7 +9,7 @@ USERNAME = "wminakov"
 README = "README.md"
 START = "<!-- LATEST-REPOS:START -->"
 END = "<!-- LATEST-REPOS:END -->"
-EXCLUDED = {"wminakov", "ARIA", "AudioTagEditor", "Audio-Tag-Editor"}
+EXCLUDED = {"wminakov"}
 LIMIT = 3
 
 
