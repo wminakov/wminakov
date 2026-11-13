@@ -22,5 +22,6 @@ I enjoy exploring technology, designing interfaces and building software that co
 ### Latest projects
 
 <!-- LATEST-REPOS:START -->
-_No additional public projects yet._
+- [**Audio-Tag-Editor**](https://github.com/wminakov/Audio-Tag-Editor) — Fast native tag editor for macOS: MP3, FLAC, M4A, WAV, OGG
+- [**ARIA**](https://github.com/wminakov/ARIA) — Free offline BPM, key & genre analyzer for DJs on macOS. Camelot Wheel, automatic key-profile selection, CSV export. Powered by Essentia.
 <!-- LATEST-REPOS:END -->
