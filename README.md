@@ -22,4 +22,5 @@ I enjoy exploring technology, designing interfaces and building software that co
 ### Latest projects
 
 <!-- LATEST-REPOS:START -->
+_No additional public projects yet._
 <!-- LATEST-REPOS:END -->
