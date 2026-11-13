@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Refresh the five most recently updated public repositories in README.md."""
+"""Refresh the three most recently updated public repositories in README.md."""
 import json
 import os
 import re
-import sys
 from urllib.request import Request, urlopen
 
 USERNAME = "wminakov"
@@ -11,6 +10,8 @@ README = "README.md"
 START = "<!-- LATEST-REPOS:START -->"
 END = "<!-- LATEST-REPOS:END -->"
 EXCLUDED = {"wminakov", "ARIA", "AudioTagEditor", "Audio-Tag-Editor"}
+LIMIT = 3
+
 
 def fetch_repositories():
     url = f"https://api.github.com/users/{USERNAME}/repos?type=owner&sort=updated&direction=desc&per_page=100"
@@ -26,6 +27,7 @@ def fetch_repositories():
     with urlopen(request, timeout=30) as response:
         return json.load(response)
 
+
 def render(repos):
     eligible = [
         repo for repo in repos
@@ -35,18 +37,19 @@ def render(repos):
         and repo.get("name") not in EXCLUDED
     ]
     eligible.sort(key=lambda item: item.get("pushed_at") or item.get("updated_at") or "", reverse=True)
-    selected = eligible[:5]
+    selected = eligible[:LIMIT]
     if not selected:
         return "_No additional public projects yet._"
 
-    lines = ["| Repository | Description | Language |", "|:--|:--|:--|"]
+    lines = []
     for repo in selected:
-        name = repo["name"].replace("|", "\\|")
-        url = repo["html_url"]
-        description = (repo.get("description") or "—").replace("|", "\\|").replace("\n", " ")
-        language = repo.get("language") or "—"
-        lines.append(f"| [{name}]({url}) | {description} | {language} |")
+        line = f"- [**{repo['name']}**]({repo['html_url']})"
+        description = (repo.get("description") or "").replace("\n", " ").strip()
+        if description:
+            line += f" — {description}"
+        lines.append(line)
     return "\n".join(lines)
+
 
 def main():
     with open(README, "r", encoding="utf-8") as file:
@@ -55,10 +58,11 @@ def main():
         raise SystemExit("README markers were not found.")
     repos = fetch_repositories()
     replacement = START + "\n" + render(repos) + "\n" + END
-    updated = re.sub(re.escape(START) + r".*?" + re.escape(END), replacement, content, flags=re.S)
+    updated = re.sub(re.escape(START) + r".*?" + re.escape(END), lambda _: replacement, content, flags=re.S)
     if updated != content:
         with open(README, "w", encoding="utf-8") as file:
             file.write(updated)
+
 
 if __name__ == "__main__":
     main()

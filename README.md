@@ -3,73 +3,23 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img alt="Abstract silver sound wave" src="assets/banner-light.svg" width="100%">
+  <img src="assets/banner-light.svg" alt="Viacheslav Minakov — Software · Music · Design · Technology" width="100%">
 </picture>
 
-# Viacheslav Minakov
-
-**Creating things with purpose.**
-
-Software · Music · Design · Technology
-
-</div>
-
----
-
-## About
+<br>
 
 I enjoy exploring technology, designing interfaces and building software that combines functionality with thoughtful design. My interests include music technology, audio software and native macOS applications.
 
-<details>
-<summary>Русская версия</summary>
+<br>
 
-Мне интересно исследовать технологии, проектировать интерфейсы и создавать программные продукты, в которых функциональность сочетается с продуманным дизайном. Мои основные интересы — музыкальные технологии, аудиопрограммы и нативная разработка приложений для macOS.
+<a href="https://www.threads.com/@w.mnkv"><img src="https://img.shields.io/badge/Threads-000000?style=flat-square&logo=threads&logoColor=white" alt="Threads"></a>
+<a href="https://www.instagram.com/w.mnkv"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"></a>
+<a href="https://t.me/w_mnkv"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram"></a>
+<a href="https://t.me/gloriosso"><img src="https://img.shields.io/badge/Musical%20Podcast-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Musical Podcast"></a>
 
-</details>
+</div>
 
-## Featured Projects
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <strong><a href="https://github.com/wminakov/ARIA">ARIA</a></strong><br>
-      Offline music analysis for macOS. Analyzes musical key and rhythm (BPM), with a focus on a clear workflow for organizing and understanding audio libraries.
-      <br><br>
-      <sub>Swift · Python · Essentia</sub>
-    </td>
-    <td width="50%" valign="top">
-      <strong>Audio Tag Editor</strong><br>
-      A native macOS application for editing audio metadata across common audio formats. Currently in development; repository link will be added after publication.
-      <br><br>
-      <sub>Swift · SwiftUI · AppKit</sub>
-    </td>
-  </tr>
-</table>
-
-## Latest Projects
-
-A short list of recently updated public repositories.
+### Latest projects
 
 <!-- LATEST-REPOS:START -->
-_No additional public projects yet._
 <!-- LATEST-REPOS:END -->
-
-## Connect
-
-<div align="center">
-
-**Personal**
-
-[Threads](https://www.threads.com/@w.mnkv) · [Instagram](https://www.instagram.com/w.mnkv) · [Telegram](https://t.me/w_mnkv)
-
-**Podcast**
-
-[Gloriosso on Telegram](https://t.me/gloriosso)
-
-</div>
-
----
-
-<div align="center">
-  <sub>Quietly building. Always learning.</sub>
-</div>
